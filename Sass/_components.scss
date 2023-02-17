@@ -1,0 +1,368 @@
+.nav {
+  padding: 1.5rem 0;
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  width: 100%;
+  font-family: Comfortaa, sans-serif;
+  z-index: 100;
+  background-color: var(--color-light);
+
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.05);
+
+  &:hover {
+    background-color: var(--color-light);
+    color: var(--color-dark-blue);
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    align-items: center;
+  }
+
+  &__link {
+    transition: all .7s;
+
+    &:link,
+    &:visited {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--color-dark-blue);
+    }
+
+    &:hover {
+      color: var(--color-light);
+      background-color: var(--color-dark-blue);
+      padding: 1.5rem;
+      border-radius: 1rem;
+    }
+  }
+}
+
+.logo {
+  width: 7rem;
+  flex: 1fr;
+
+  &>img {
+    width: 100%;
+  }
+
+  &:hover>img {
+    transform: translateY(-.5rem);
+
+  }
+
+  &:active>img {
+    transform: translateY(0rem);
+
+  }
+}
+
+.header {
+  font-family: Comfortaa, sans-serif;
+  font-weight: 800;
+
+  &>*:not(:last-child) {
+    margin-bottom: 2rem;
+
+  }
+
+  &__img {
+    height: 50rem;
+  }
+
+  &_btns {
+    &>*:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+
+}
+
+.btn {
+  border: none;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 2px solid var(--color-dark-blue);
+  transition: all .4s;
+
+  &:hover {
+    transform: scale(.9);
+  }
+
+  &--dark {
+    background-color: var(--color-dark-blue);
+    color: var(--color-light);
+
+    &:hover {
+      box-shadow: inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+      background-color: var(--color-light);
+      color: var(--color-dark-blue);
+
+    }
+
+
+  }
+
+
+}
+
+.padding-mid {
+  padding: 2rem 0;
+}
+.padding-lg {
+  padding: 7rem 0;
+}
+
+
+
+.title {
+  font-weight: 800;
+  font-size: 3rem;
+  text-transform: capitalize;
+  margin: 5rem 0;
+}
+
+.work {
+  transition: all 1s;
+
+  &__item {
+    padding: 3rem;
+    text-align: center;
+    border: .6rem solid var(--color-dark-blue);
+    border-radius: 2rem;
+  }
+
+  &__img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    width: 100%;
+    // margin-bottom: 4rem;
+    border-radius: 1rem;
+    transition: all .4s;
+    transition: filter 1s;
+
+    &:hover {
+      filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
+
+    }
+  }
+
+  &__text {
+
+    margin-bottom: 2rem;
+  }
+
+  &__link {
+    color: var(--color-dark-blue);
+    font-family: Comfortaa, sans-serif;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+
+    &:hover>*:not(:last-child) {
+      transform: scale(.99);
+    }
+
+  }
+}
+
+
+.about {
+  font-family: Comfortaa, sans-serif;
+
+  &__img {
+    width: 50rem;
+  }
+
+  &__text {
+    flex: 0 0 50%;
+    font-size: 2.5rem;
+  }
+}
+
+
+.container-flex {
+  &>*:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+}
+
+.skillset {
+
+  &__box {
+
+    display: flex;
+    align-items: center;
+    padding: 2rem 4rem;
+
+    &--r {
+      flex-direction: row-reverse;
+
+      &>.skillset__img {
+        margin-left: 3rem;
+        margin-right: 0 rem;
+      }
+    }
+
+
+  }
+
+  &__img {
+    background-size: cover;
+    flex: 0 0 20rem;
+    height: 20rem;
+    width: 20rem;
+    transition: all 1s;
+    margin-left: 0;
+    margin-right: 3rem;
+
+    // align-self: flex-start;
+    &--1 {
+      background-image: url(../../img/skill2.png);
+      &:hover {
+        background-image: url(../../img/skill2c.png);
+        -webkit-filter: drop-shadow(0px 70px 10px #666666);
+        filter: drop-shadow(0px 70px 10px #666666);
+        transform: translateY(-1rem);
+      }
+    }
+    &--2 {
+      background-image: url(../../img/skill3.png);
+      &:hover {
+        -webkit-filter: drop-shadow(30px 0px 10px #666666);
+        filter: drop-shadow(30px 0px 10px #666666);
+        background-image: url(../../img/skill3c.png);
+        transform: translateX(1rem);
+      }
+    }
+    &--3 {
+      background-image: url(../../img/skill1.png);
+      &:hover {
+        -webkit-filter: drop-shadow(30px 0px 10px #666666);
+        filter: drop-shadow(30px 0px 10px #666666);
+        background-image: url(../../img/skill1c.png);
+        transform: translateX(-1rem);
+      }
+    }
+  }
+
+  &__text {
+    font-size: 5rem;
+  }
+}
+
+.contact{
+  text-align: center;
+  &__item{
+    background-size: cover;
+    flex: 0 0 20rem;
+    height: 20rem;
+    width: 20rem;
+    transition: all 1s;
+    margin-left: 0;
+    margin-right: 3rem;
+    &--1 {
+      background-image: url(../../img/socialMedia/twitter.png);
+      &:hover {
+        background-image: url(../../img/socialMedia/twitterc.png);
+        transform: translateY(-.7rem);
+      }
+    }
+    &--2 {
+      background-image: url(../../img/socialMedia/facebook.png);
+      &:hover {
+        background-image: url(../../img/socialMedia/facebookc.png);
+        transform: translateY(-.7rem);
+      }
+    }
+    &--3 {
+      background-image: url(../../img/socialMedia/linkedin.png);
+      &:hover {
+        background-image: url(../../img/socialMedia/linkedinc.png);
+        transform: translateY(-.7rem);
+      }
+    }
+    &--4 {
+      background-image: url(../../img/socialMedia/codepen.png);
+      &:hover {
+        background-image: url(../../img/socialMedia/codepenc.png);
+        transform: translateY(-.7rem);
+      }
+    }
+  }
+  &__text{
+    font-size: 2rem;
+  }
+  &__notice{
+    margin-bottom: 11rem;
+   &--text{
+   
+    margin-bottom: 2rem;
+    font-size: 2rem;
+   }
+  }
+  &__btn{
+  
+    padding-left: 10rem;
+    padding-right: 10rem;
+  
+    font-size: 2rem;
+  }
+  &__icon{
+    font-size: 4rem;
+    padding: 0 2rem;
+    color: var(--color-dark-blue);
+    &:hover{
+      color: var( --color-light-blue);
+    }
+    &:active{
+      color: var(--color-mid-red);
+    }
+  }
+
+}
+
+.footer{
+  padding:2rem 3rem;
+  font-size: 1.5rem;
+  background-color: var(--color-dark-blue);
+  color: var(--color-light);
+  &>*:not(:last-child){
+    margin-right: 1rem;
+  }
+
+}
+
+ .ys{
+    color: var(  --color-light-red);
+  }
+
+// icons
+
+// .ninja{
+//   font-size:2rem;
+//   &::after{
+//     font-family: 'Font Awesome 5 Free';
+//     content: '\f504';
+//     font-weight: 900;
+//   }
+// }
+
+
+.ninja{
+  font-size: 2rem;
+  color: var(--color-light);
+  &:hover{
+    
+    color: var(--color-light-blue);
+  }
+  &:active{
+    color: var(--color-light-red);
+  }
+}
+
+

@@ -1,0 +1,87 @@
+.header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.container-grid {
+    flex: 0 0 70%;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 5rem;
+    row-gap: 5rem;
+
+}
+
+.container-flex {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container-flex-row {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.work {
+    padding-top: 10rem;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+
+
+.about {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    padding: 5rem;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+
+
+}
+
+.skillset {
+    padding-top: 10rem;
+    // height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 1s;
+}
+
+.contact {
+    padding: 10rem;
+    width: 100vw;
+    // height: 100vh;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 1s;
+    position: relative;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
