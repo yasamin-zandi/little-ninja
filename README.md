@@ -25,7 +25,7 @@ needs some finishing touch  + responsive version
 
 ### Links
 
-- Live Site URL: [Little Ninja](https://your-live-site-url.com)
+- Live Site URL: [Little Ninja](https://yasamin-zandi.github.io/little-ninja/)
 
 
 
